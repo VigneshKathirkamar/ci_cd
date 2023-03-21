@@ -1,5 +1,5 @@
 # mime stands for multipurpose internet mail extension
-# hpxbljzukduzljhl ==> pass
+# ==> pass
 from email.mime import multipart 
 import smtplib
 from email.mime.text import MIMEText
@@ -10,7 +10,7 @@ from email.mime.image import MIMEImage # to accomodate image attachment
 from email import encoders
 
 uname = 'i51vignesh@gmail.com'
-pwd = 'hpxbljzukduzljhl' # the 16 digit character which we got from myaccounts.google.com
+pwd = 'my16dpassword' # the 16 digit character which we got from myaccounts.google.com
 
 
 # defining a function to send a mail with attachment (picture)
