@@ -10,4 +10,4 @@ this_day = date.today()
 today = this_day.strftime("%d/%m/%Y")
 
 get_gold_rate()
-send_mail(uname,pwd,text="Gold rate today man !!", subject="Gold rate "+today,from_email= "i51vignesh@gmail.com",to_emails=["vigneshkathirkamar@gmail.com","ilamathi1996@gmail.com"])
+send_mail(uname,pwd,text="Gold rate today man !!", subject="Gold rate "+today,from_email= "i51vignesh@gmail.com",to_emails=["vigneshkathirkamar@gmail.com"])
