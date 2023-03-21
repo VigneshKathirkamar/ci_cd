@@ -19,7 +19,7 @@ def get_gold_rate():
 
     headers = ['Date','1g of 24k gold','8g of 24k gold','1g of 22k gold','8g of 24k gold']
     price = []
-    table_data = []
+
     for i in data:
         if "/" in i[0]:
             price.append(i)
@@ -27,6 +27,7 @@ def get_gold_rate():
 
     df = pd.DataFrame(price, columns=headers)
 
-    return df
+    return df.to_csv("gold.csv")
 
     # print(df)
+get_gold_rate()
