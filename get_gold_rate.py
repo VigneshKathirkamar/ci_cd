@@ -1,11 +1,12 @@
 import pandas as pd
 import requests
 from bs4 import BeautifulSoup
+from settings import get_url
 
 
 def get_gold_rate():
 
-    url = "https://www.livechennai.com/gold_silverrate.asp"
+    url = get_url()
 
     response = requests.get(url)
     soup = BeautifulSoup(response.content, 'html.parser')
@@ -30,4 +31,4 @@ def get_gold_rate():
     return df.to_csv("gold.csv")
 
     # print(df)
-get_gold_rate()
+# get_gold_rate()
